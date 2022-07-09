@@ -1,0 +1,16 @@
+{
+    "name": "msrumon/smarty",
+    "description": "Smarty compiler issue",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rumon",
+            "email": "contact@msrumon.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "smarty/smarty": "^4.1"
+    }
+}

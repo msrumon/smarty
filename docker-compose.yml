@@ -1,0 +1,16 @@
+services:
+  app:
+    image: php:apache
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html:rw
+    ports:
+      - 80:80
+  composer:
+    image: composer
+    working_dir: /tmp/composer
+    volumes:
+      - .:/tmp/composer:delegated
+    entrypoint:
+      - composer
+      - --ignore-platform-reqs
